@@ -1,0 +1,25 @@
+---
+
+---
+<header class="flex  bg-slate-500 justify-between items-center h-24 ">
+   <div class="ml-6 text-red-600 text-3xl font-bold z-10"><a href="/">LOGO</a></div>
+   <nav id="menu" class=" hidden  absolute  md:block w-[100%] z-10 md:z-0 mt-[21.5rem] md:mt-0 ">
+    <ul  class=" flex flex-col px-4 my-8 md:flex-row gap-5 pr-5  text-center md:mr-32 md:float-right bg-slate-700 md:bg-slate-500 ">
+        <li class="mt-9 md:mt-0 md:pr-5 text-xl hover:text-red-400"><a href="/">home</a></li>
+        <li class="md:pr-4 text-lg hover:text-red-400"><a href="/quienesSomos">quienes somos</a></li>
+        <li class="md:pr-4 text-lg hover:text-red-400"><a href="/productos">productos</a></li>
+        <li class="mb-9 md:mb-0 md:pr-4 text-lg hover:text-red-400"><a href="/contacto">contacto</a></li>
+    </ul>
+   </nav>
+   <div id="boton" class="mr-6 md:hidden cursor-pointer"><img src="menu.svg" alt=""></div>
+
+</header> 
+<script>
+    const boton = document.querySelector('#boton')
+const menu = document.querySelector("#menu")
+
+boton?.addEventListener('click', ()=> {
+    console.log('me diste click')
+    menu?.classList.toggle('hidden')
+} )
+</script>

@@ -1,0 +1,17 @@
+---
+interface Props{
+    title:string
+    description:string
+    precio:string
+    imagen:string
+}
+const {title, description, precio, imagen} = Astro.props
+
+---
+<div class="flex flex-col p-3 bg-slate-800 rounded-md  mx-5 items-center">
+    <img class="w-[100px] py-10" src={imagen} alt="">
+    <h2 class="uppercase font-bold text-xl mb-5">{title}</h2>
+    <p>{description}</p>
+    <p class="font-bold hover:text-red-300">{precio}</p>
+    <button class="bg-cyan-900 px-6 py-1 rounded-xl hover:bg-teal-600 mt-8"><a href="/productos">saber mas</a></button>
+</div>
