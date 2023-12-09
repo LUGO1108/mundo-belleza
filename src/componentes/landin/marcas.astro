@@ -3,9 +3,11 @@ import CardMarcas from "../componet/CardMarcas.astro";
 
 ---
 
-<section class="bg-slate-200 text-slate-700 my-10">
-    <h3 class="uppercase text-3xl font-semibold text-center py-4 ">estas son ls mrcasa que manejamos</h3>
-    <div class="grid grid-cols-4 items-center">
+<section class="bg-slate-200 text-slate-700 flex flex-col items-center ">
+    <h3 class="uppercase text-3xl font-semibold text-center py-10 ">
+        estas son ls mrcasa que manejamos
+    </h3>
+    <div class="grid grid-cols-4 gap-8 container m-auto items-center p-5">
         <CardMarcas imagen="favicon.svg"/>
         <CardMarcas imagen="favicon.svg"/>
         <CardMarcas imagen="favicon.svg"/>
@@ -14,5 +16,6 @@ import CardMarcas from "../componet/CardMarcas.astro";
         <CardMarcas imagen="favicon.svg"/>
         <CardMarcas imagen="favicon.svg"/>
         <CardMarcas imagen="favicon.svg"/>
+        
     </div>
 </section>
